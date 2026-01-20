@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "format": "prettier . --write",
+    "preview": "vite preview",
+    "test:browser": "vitest --config=vitest.browser.config.ts"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -19,6 +21,7 @@
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/browser-playwright": "^4.0.17",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
@@ -27,7 +30,8 @@
     "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vitest-browser-react": "^2.0.2"
   },
   "engines": {
     "node": "24.13.0",
